@@ -1,0 +1,22 @@
+{
+  "name": "Pokedex",
+  "version": "1.0.0",
+  "description": "Simple pokedex",
+  "main": "index.html",
+  "scripts": {
+    "start": "node_modules/http-server/bin/http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thetongz/TheTonG.Pokedex.git"
+  },
+  "author": "Tanawat Tassana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thetongz/TheTonG.Pokedex/issues"
+  },
+  "homepage": "https://github.com/thetongz/TheTonG.Pokedex#readme",
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  }
+}
