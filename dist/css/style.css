@@ -1,12 +1,10 @@
 table {
-    padding-left:10%;
-    padding-right:10%;
     width=100%;
 }
 
 th,td {
     border-bottom: 1px solid #ddd;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 th {
@@ -19,7 +17,7 @@ td {
     font-size: 14px;
 }
 
-.img-logo {
+.img-picture {
     width: 180px;
     height: 180px;
 }
