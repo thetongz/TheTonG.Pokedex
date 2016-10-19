@@ -2,11 +2,29 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 
+const Navbar = () =>{
+
+    return(
+        <section>   
+            <ul className="topnav">
+                <li><a >TheTonG.Pokedex</a></li>
+                <input type="text" className="right" name="search" placeholder="Search.."/>
+            </ul>
+            
+        </section>
+    )
+}
+
 
 const PokeCurrentImage = (props) =>{
     const src = ['image/', props.image].join("")
     const title = props.image.split(".")[0];
-    return <img className="img-picture" src={src} title={title}/>    
+
+    return (
+        <td>
+            <img className="img-picture" src={src} title={title}/>
+        </td>
+    )
 }
 
 const PokeNextImage = (props) =>{
@@ -117,4 +135,10 @@ const App = () =>{
     )
 }
 
+
+
+
+
+
+ReactDOM.render(<Navbar />,document.getElementById('nav-bar'))
 ReactDOM.render(<App />,document.getElementById('app'))

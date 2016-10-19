@@ -40,11 +40,24 @@ ul.topnav li {
     float: left;
     font-size: 20px;
 }
-ul.topnav li.right {float: right;}
+ul.topnav input.right {float: right;}
 ul.topnav li a{
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+ul.topnav input[type=text] {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 10px 10px 10px 10px;
 }
