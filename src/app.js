@@ -20,10 +20,7 @@ const PokeNextImage = (props) =>{
     }
     
 }
-const PokeTable = (props) =>{
-    const name = "hello"
-
-    return(
+const PokeTable = (props) =>(
     <table>
         <tr>
         {   
@@ -50,8 +47,6 @@ const PokeTable = (props) =>{
     </table>
 
 )
-}
-
 
 const App = () =>{
     const header = ["Number","Image","Name","Category","CP","IV","Next Evolution"]
