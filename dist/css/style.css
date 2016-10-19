@@ -1,5 +1,5 @@
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Droid Sans', sans-serif;
     margin: 0;
 }
 
@@ -20,7 +20,7 @@ th {
 }
 
 td {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .img-picture {
@@ -54,7 +54,7 @@ ul.topnav input[type=text] {
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 14px;
     background-color: white;
     background-position: 10px 10px;
     margin-top: 5px;
