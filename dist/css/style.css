@@ -1,26 +1,50 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
 table {
     width: 80%;
     text-align: center;
     margin-left:auto; 
     margin-right:auto;
+    margin-top: 30px;
 }
-
 th,td {
-    border-bottom: 1px solid #ddd;
     padding-left: 20px;
+    border-bottom: 1px solid #ddd;
 }
 
 th {
-    font-family: 'Lato', sans-serif;
     font-size: 18px;
 }
 
 td {
-    font-family: 'Lato', sans-serif;
     font-size: 14px;
 }
 
 .img-picture {
     width: 180px;
     height: 180px;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {
+    float: left;
+    font-size: 20px;
+}
+ul.topnav li.right {float: right;}
+ul.topnav li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
