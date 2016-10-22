@@ -40,28 +40,30 @@ const PokeNextImage = (props) =>{
 }
 const PokeTable = (props) =>(
     <table>
-        <tr>
-        {   
-            props.header.map(header => (
-                    <th>{ header }</th>
+        <tbody>
+            <tr>
+            {   
+                props.header.map((header,i) => (
+                        <th key={i}>{ header }</th>
+                    )
                 )
-            )
-        }
-        </tr>
-        {
-            props.details.map(details => (
-                    <tr>
-                        <td>{details.Number}</td>
-                        <PokeCurrentImage image={details.Image}/>
-                        <td>{details.Name}</td>
-                        <td>{details.Category}</td>
-                        <td>{details.CP}</td>
-                        <td>{details.IV}</td>
-                        <PokeNextImage evolution={details.Next_Evolution}/>
-                    </tr>
+            }
+            </tr>
+            {
+                props.details.map(details => (
+                        <tr key={details.Number}>
+                            <td>{details.Number}</td>
+                            <PokeCurrentImage image={details.Image}/>
+                            <td>{details.Name}</td>
+                            <td>{details.Category}</td>
+                            <td>{details.CP}</td>
+                            <td>{details.IV}</td>
+                            <PokeNextImage evolution={details.Next_Evolution}/>
+                        </tr>
+                    )
                 )
-            )
-        }
+            }
+        </tbody>
     </table>
 
 )
