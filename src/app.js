@@ -117,6 +117,7 @@ const App = () =>{
         ]
     return (
         <section >
+            <Navbar />
             <PokeTable 
                 header = {header} 
                 details = {details}
@@ -130,5 +131,4 @@ const App = () =>{
 
 
 
-ReactDOM.render(<Navbar />,document.getElementById('nav-bar'))
 ReactDOM.render(<App />,document.getElementById('app'))
