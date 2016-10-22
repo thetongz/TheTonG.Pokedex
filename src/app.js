@@ -1,60 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {Navbar} from './navigation'
+import {PokeTable} from './pokemon-table'
 
 
-
-const PokeCurrentImage = (props) =>{
-    const src = `image/${props.image}`
-    const title = props.image.split(".")[0];
-
-    return (
-        <td>
-            <img className="img-picture" src={src} title={title}/>
-        </td>
-    )
-}
-
-const PokeNextImage = (props) =>{
-    const img_regex = /\.(gif|jpg|jpeg|tiff|png)$/i
-    const isImage =  props.evolution.match(img_regex)?true:false
-    
-    if(isImage){
-        return <PokeCurrentImage image={props.evolution} />
-    }else{
-        return <td>Cannot Evolution</td>
-    }
-    
-}
-const PokeTable = (props) =>(
-    <table>
-        <tbody>
-            <tr>
-            {   
-                props.header.map((header,i) => (
-                        <th key={i}>{ header }</th>
-                    )
-                )
-            }
-            </tr>
-            {
-                props.details.map(details => (
-                        <tr key={details.Number}>
-                            <td>{details.Number}</td>
-                            <PokeCurrentImage image={details.Image}/>
-                            <td>{details.Name}</td>
-                            <td>{details.Category}</td>
-                            <td>{details.CP}</td>
-                            <td>{details.IV}</td>
-                            <PokeNextImage evolution={details.Next_Evolution}/>
-                        </tr>
-                    )
-                )
-            }
-        </tbody>
-    </table>
-
-)
 
 const App = () =>{
     const header = ["Number","Image","Name","Category","CP","IV","Next Evolution"]
