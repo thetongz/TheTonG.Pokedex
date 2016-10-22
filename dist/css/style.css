@@ -49,14 +49,14 @@ ul.topnav li a{
     text-decoration: none;
     font-size: 20px;
 }
-
-ul.topnav input.right {
+    
+.nav-right {
     float: right;
-    border-left: 1px solid #ddd;
+    margin: 0 0 10px 10px;
 }
 
 ul.topnav input[type=text] {
-    width: 20%;
+    width: 200px;
     box-sizing: border-box;
     border: 2px solid #ddd;
     border-radius: 4px;
@@ -66,4 +66,17 @@ ul.topnav input[type=text] {
     margin-top: 5px;
     margin-right: 5px;
     padding: 10px 10px 10px 10px;
+}
+
+ul.topnav button {
+    background-color: #ddd; 
+    border: none;
+    color: black;
+    padding: 12px 12px 12px 12px;
+    text-align: center;
+    text-decoration: none;  
+    font-size: 14px;
+    margin-top: 5px;
+    margin-right: 5px;
+    float: right;
 }
