@@ -17,7 +17,7 @@ const Navbar = () =>{
 
 
 const PokeCurrentImage = (props) =>{
-    const src = ['image/', props.image].join("")
+    const src = `image/${props.image}`
     const title = props.image.split(".")[0];
 
     return (
