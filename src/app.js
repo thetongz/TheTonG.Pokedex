@@ -1,19 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import {Navbar} from './navigation'
 
-
-const Navbar = () =>{
-
-    return(
-        <section>   
-            <ul className="topnav">
-                <li><a >TheTonG.Pokedex</a></li>
-                <input type="text" className="right" name="search" placeholder="Search.."/>
-            </ul>
-            
-        </section>
-    )
-}
 
 
 const PokeCurrentImage = (props) =>{
